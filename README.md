@@ -34,5 +34,15 @@ No final todas as informações sao processadas por uma LLM para gerar um relat�
 
 <hr>
 
- 
+### Exemplo visual do fluxo:
+<p>O usuário escreve o nome da empresa:</p>
 
+![TelaInput](images/input_de_dados.png)
+
+<p>A tela de carregamento é executada enquanto tudo é processado:</p>
+
+![TelaCarregamento](images/carregamento.gif)
+
+<p>No final é mostrado o relatório em uma tela organizada com o ticker (com resumo e descrição da empresa), valor da ação e notícias:</p>
+ 
+![TelaFinal](images/tela_final_relatorio.png)
