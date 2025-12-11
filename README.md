@@ -28,7 +28,7 @@ No final todas as informações sao processadas por uma LLM para gerar um relat�
 1.  **Entrada (Input):** O usuário fornece o nome da empresa. O `input_de_dados` (módulo `terminal.py`) garante a limpeza e padronização.
 2.  **Carregamento Visual (UX):** A execução é envolvida pelo `rich.status`, exibindo um carregamento animado enquanto o LangChain processa.
 3.  **Processamento Paralelo:** O **`RunnableParallel`** inicia a busca de dados em dois processos simultaneamente:
-    * **Dados Financeiros:** Busca do Ticker e Preço (via **yfinance**).
+    * **Dados Financeiros:** Busca dos dados da empresa: **valor** e **informações** (via **yfinance**).
     * **Notícias:** Busca de 2-3 notícias recentes (via **Tavily**).
 4.  **Relatório Final:** Os resultados paralelos são compilados no `processamento_final.py`, onde o LLM (*com um parser feito com Pydantic*) gera a saída estruturada (via **Rich**) pelo terminal.
 
