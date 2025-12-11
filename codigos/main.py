@@ -18,7 +18,6 @@ chain_pipeline_completa = (
 )
 
 if __name__ == "__main__":
-    
     try:
         nome_da_empresa = input_de_dados()
         if not nome_da_empresa:
