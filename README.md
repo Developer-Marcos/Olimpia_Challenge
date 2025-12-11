@@ -41,8 +41,30 @@ No final todas as informações sao processadas por uma LLM para gerar um relat�
 
 <p>A tela de carregamento é executada enquanto tudo é processado:</p>
 
-![TelaCarregamento](images/carregamento.gif)
+![TelaCarregamento](https://github.com/Developer-Marcos/Olimpia_Challenge/blob/1040a3a5220f1afb79da42b7a5dff9911f4bf9f3/images/carregamento.gif)
 
 <p>No final é mostrado o relatório em uma tela organizada com o ticker (com resumo e descrição da empresa), valor da ação e notícias:</p>
  
 ![TelaFinal](images/tela_final_relatorio.png)
+
+<hr>
+
+### Como iniciar:
+1. Clone o repositório:
+```
+git clone https://github.com/Developer-Marcos/sistema-de-pesquisa-web-inteligente.git
+```
+
+2. Instale os requisitos:
+
+```
+pip install -r requirements.txt
+```
+
+3. Adicione um .env e as determinadas chaves de api:
+``` python
+GEMINI_API_KEY = sua_API_KEY_google
+TAVILY_API_KEY = sua_API_KEY_tavily
+```
+
+4. Execute o arquivo `main.py`.
